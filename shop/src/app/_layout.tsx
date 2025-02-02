@@ -24,6 +24,11 @@ export default function RootLayout() {
                     title: 'Shopping Cart',
                   }}
                 />
+
+                 <Stack.Screen
+                  name='search-results'
+                 
+                />
                 <Stack.Screen name='auth' options={{ headerShown: false }} />
               </Stack>
            
