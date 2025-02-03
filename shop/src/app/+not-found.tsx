@@ -1,8 +1,9 @@
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import { Link, Stack } from 'expo-router';
+import { useRouter, Stack } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 
 export default function NotFoundScreen() {
+  const router = useRouter();
  return (
    <View style={styles.container}>
      <Stack.Screen options={{ headerShown: false }} />
@@ -17,12 +18,12 @@ export default function NotFoundScreen() {
          The page you're looking for doesn't exist or has been moved.
        </Text>
 
-       <Link href="/" asChild>
-         <TouchableOpacity style={styles.button}>
+         <TouchableOpacity 
+          onPress={() => router.back()}
+         style={styles.button}>
            <Ionicons name="home-outline" size={24} color="#fff" />
            <Text style={styles.buttonText}>Back to Home</Text>
          </TouchableOpacity>
-       </Link>
      </View>
    </View>
  );

@@ -8,9 +8,11 @@ import BannerSlider from '../../components/header-banner';
 import CategoriesList from '../../components/categories-list';
 import SpecialOffers from '../../components/special-offers';
 import { ProductList } from '../../components/product-item-list';
+import { useRouter } from 'expo-router';
 
 
 const Home = () => {
+  const router = useRouter();
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scrollView}>
@@ -36,7 +38,7 @@ const Home = () => {
          {/* Special Offers */}
         
         {/* Popular Products */}
-        <ProductList title="Popular Products" products={PRODUCTS} />
+        <ProductList title="Popular Products" products={PRODUCTS}  onSeeAll={() => router.push('/products')}/>
          {/* Popular Products */}
       </ScrollView>
     </SafeAreaView>
