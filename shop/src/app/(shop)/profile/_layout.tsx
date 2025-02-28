@@ -1,11 +1,11 @@
 import { Tabs } from "expo-router";
 
-const OrdersLayout=() => {
+const ProfileLayout=() => {
     return(
       <Tabs>
         <Tabs.Screen
           name='index'
-          options={{ headerShown: false, title: 'Orders' }}
+          options={{ headerShown: false, title: 'Profile' }}
         />
         {/* <Tabs.Screen
           name='orders'
@@ -15,4 +15,4 @@ const OrdersLayout=() => {
       </Tabs>
     );
 };
-export default OrdersLayout;
+export default ProfileLayout;

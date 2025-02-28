@@ -3,8 +3,8 @@ import { useState } from 'react';
 import { View, Text, StyleSheet, Image, ScrollView, TouchableOpacity, Dimensions } from 'react-native';
 import { useLocalSearchParams, Stack } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
-import { PRODUCTS } from '../../../assets/products';
-import CustomHeader from '../../components/custom-header';
+import { PRODUCTS } from '../../../../assets/products';
+import CustomHeader from '../../../components/custom-header';
 
 export default function ProductDetails() {
  const { id } = useLocalSearchParams();

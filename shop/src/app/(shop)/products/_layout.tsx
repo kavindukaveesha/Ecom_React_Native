@@ -1,5 +1,5 @@
 import { Stack } from "expo-router";
-import useTheme from "../../hooks/useTheme";
+import useTheme from "../../../hooks/useTheme";
 
 export default function ProductLayout() {
   const { activeColors } = useTheme();
@@ -13,8 +13,8 @@ export default function ProductLayout() {
         }
       }}
     >
-      <Stack.Screen name="[id]" />
       <Stack.Screen name="index" />
+       <Stack.Screen name="[id]" />
     </Stack>
   );
  }

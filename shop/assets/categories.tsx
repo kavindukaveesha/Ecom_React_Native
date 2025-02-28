@@ -7,6 +7,7 @@ export const CATEGORIES: Category[] = [
     name: 'Laptops',
     slug: 'laptops',
     icon: 'laptop-outline',
+    imageUrl: require('../assets/images/mac-book-1.jpg'),
     products: PRODUCTS.filter(product => product.category.slug === 'laptops'),
   },
   {
@@ -14,6 +15,7 @@ export const CATEGORIES: Category[] = [
     name: 'Smart phones', 
     slug: 'phones',
     icon: 'phone-portrait-outline',
+    imageUrl: '/images/categories/phones.jpg',
     products: PRODUCTS.filter(product => product.category.slug === 'phones'),
   },
   {
@@ -21,13 +23,15 @@ export const CATEGORIES: Category[] = [
     name: 'Gaming',
     slug: 'gaming',
     icon: 'game-controller-outline',
+    imageUrl: '/images/categories/gaming.jpg',
     products: PRODUCTS.filter(product => product.category.slug === 'gaming'),
   },
   {
     id: '4',
     name: 'Audio',
     slug: 'audio',
-    icon: 'headset-outline', 
+    icon: 'headset-outline',
+    imageUrl: '/images/categories/audio.jpg',
     products: PRODUCTS.filter(product => product.category.slug === 'audio'),
   },
   {
@@ -35,6 +39,7 @@ export const CATEGORIES: Category[] = [
     name: 'Tablets',
     slug: 'tablets',
     icon: 'tablet-landscape-outline',
+    imageUrl: '/images/categories/tablets.jpg',
     products: PRODUCTS.filter(product => product.category.slug === 'tablets'),
   },
   {
@@ -42,6 +47,7 @@ export const CATEGORIES: Category[] = [
     name: 'Cameras',
     slug: 'cameras',
     icon: 'camera-outline',
+    imageUrl: '/images/categories/cameras.jpg',
     products: PRODUCTS.filter(product => product.category.slug === 'cameras'),
   },
   {
@@ -49,6 +55,7 @@ export const CATEGORIES: Category[] = [
     name: 'Smart Home',
     slug: 'smart-home',
     icon: 'home-outline',
+    imageUrl: '/images/categories/smart-home.jpg',
     products: PRODUCTS.filter(product => product.category.slug === 'smart-home'),
   },
   {
@@ -56,6 +63,7 @@ export const CATEGORIES: Category[] = [
     name: 'Wearables',
     slug: 'wearables',
     icon: 'watch-outline',
+    imageUrl: '/images/laptops.jpg',
     products: PRODUCTS.filter(product => product.category.slug === 'wearables'),
   },
   {
@@ -63,6 +71,7 @@ export const CATEGORIES: Category[] = [
     name: 'TV & Video',
     slug: 'tv-video',
     icon: 'tv-outline',
+    imageUrl: '/images/categories/tv-video.jpg',
     products: PRODUCTS.filter(product => product.category.slug === 'tv-video'),
   },
   {
@@ -70,6 +79,7 @@ export const CATEGORIES: Category[] = [
     name: 'Storage',
     slug: 'storage',
     icon: 'hardware-chip-outline',
+    imageUrl: '/images/categories/storage.jpg',
     products: PRODUCTS.filter(product => product.category.slug === 'storage'),
   }
 ];

@@ -24,6 +24,7 @@ export default function RootLayout() {
                     title: 'Shopping Cart',
                   }}
                 />
+                 <Stack.Screen name='notifications' options={{ headerShown: false }} />
 
                  <Stack.Screen
                   name='search-results'

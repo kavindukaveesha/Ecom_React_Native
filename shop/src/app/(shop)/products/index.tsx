@@ -3,11 +3,11 @@ import { FlatList, ScrollView, StyleSheet, Text, TouchableOpacity, View } from '
 import React, { useState } from 'react'
 
 import { Ionicons } from '@expo/vector-icons'
-import { CATEGORIES } from '../../../assets/categories'
-import { PRODUCTS } from '../../../assets/products'
-import BannerSlider from '../../components/header-banner'
-import ProductCard from '../../components/product-card'
-import CustomHeader from '../../components/custom-header'
+import { CATEGORIES } from '../../../../assets/categories'
+import { PRODUCTS } from '../../../../assets/products'
+import BannerSlider from '../../../components/header-banner'
+import ProductCard from '../../../components/product-card'
+import CustomHeader from '../../../components/custom-header'
 
 export default function ProductsScreen() {
  const [selectedCategory, setSelectedCategory] = useState('all')

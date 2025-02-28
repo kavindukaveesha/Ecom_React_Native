@@ -6,7 +6,7 @@ import useTheme from '../../hooks/useTheme';
 
 const TabsLayout = () => {
   const { colors, isDark, activeColors } = useTheme();
-
+  
   // Create dynamic styles based on theme
   const dynamicStyles = StyleSheet.create({
     container: {
@@ -14,7 +14,7 @@ const TabsLayout = () => {
       backgroundColor: activeColors.background,
     },
   });
-
+  
   return (
     <SafeAreaView edges={['bottom']} style={dynamicStyles.container}>
       <Tabs
@@ -66,21 +66,21 @@ const TabsLayout = () => {
         />
         
         <Tabs.Screen
-          name="orders"
+          name="products"
           options={{
-            title: 'Orders',
+            title: 'Shop',
             tabBarIcon: ({ color, size }) => (
-              <Ionicons name="cart" size={24} color={color} />
+              <Ionicons name="grid" size={24} color={color} />
             ),
           }}
         />
         
         <Tabs.Screen
-          name="notifications"
+          name="cart"
           options={{
-            title: 'Alerts',
+            title: 'Cart',
             tabBarIcon: ({ color, size }) => (
-              <Ionicons name="notifications" size={24} color={color} />
+              <Ionicons name="cart" size={24} color={color} />
             ),
           }}
         />

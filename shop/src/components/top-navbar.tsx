@@ -36,7 +36,7 @@ const TopNavBar = ({ cartItems = 0, notifications = 0 }) => {
         </Link>
 
         {/* Notifications Link */}
-        <Link href="/notifications" asChild>
+        <Link href="notifications" asChild>
           <Pressable style={styles.iconWrapper}>
             <Ionicons name="notifications-outline" size={24} color={colors.text.primary} />
             {notifications > 0 && (
